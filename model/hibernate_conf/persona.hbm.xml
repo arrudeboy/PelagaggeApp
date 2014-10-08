@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="pelagaggemodel.pojo.Persona" table="Personas">
+     <id column="idPersona" name="id_persona" type="int">
+      <generator class="increment"/>
+    </id>
+    
+    <property column="apellido" name="apellido" type="java.lang.String" not-null="true"/>
+    <property column="nombre" name="nombre" type="java.lang.String" not-null="true"/>
+    <property column="telefono" name="telefono" type="java.lang.String" not-null="true"/>
+    <property column="dni" name="dni" type="java.lang.String" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>
