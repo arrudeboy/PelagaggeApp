@@ -1,6 +1,6 @@
 package pelagaggemodel.dao.model;
 
-import conservatorioutilities.dao.HibernateGenericDAO;
+import pelagaggemodel.dao.generic.HibernateGenericDAO;
 import java.util.Date;
 import java.util.List;
 import org.hibernate.Query;
