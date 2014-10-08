@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="pelagaggemodel.pojo.Alquiler" table="Alquileres">
+     <id column="idAlquiler" name="id_alquiler" type="int">
+      <generator class="increment"/>
+    </id>
+    
+    <property column="fechaInicio" name="fechaInicio" type="java.util.Date" not-null="true"/>
+    <property column="fechaFin" name="fechaFin" type="java.util.Date" not-null="true"/>
+    <property column="valorAlquiler" name="valorAlquiler" type="int" not-null="true"/>
+    <property column="eliminado" name="eliminado" type="int" not-null="true"/>
+
+    
+    <many-to-one name="responsable_pago" column="idResponsablePago" class="pelagaggemodel.pojo.Persona"/>
+    <many-to-one name="departamento" column="idDepartamento" class="pelagaggemodel.pojo.Departamento"/>
+
+    
+   </class>
+
+</hibernate-mapping>
