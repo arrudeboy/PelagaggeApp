@@ -1,6 +1,6 @@
 package pelagaggemodel.dao.model;
 
-import conservatorioutilities.dao.GenericDAO;
+import pelagaggemodel.dao.generic.GenericDAO;
 import java.util.Date;
 import pelagaggemodel.pojo.Alquiler;
 import pelagaggemodel.pojo.Departamento;
