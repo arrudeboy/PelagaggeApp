@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="pelagaggemodel.pojo.Recibo" table="Recibos">
+     <id column="idRecibo" name="id_recibo" type="int">
+      <generator class="increment"/>
+    </id>
+    
+    <property column="nro_recibo" name="nro_recibo" type="java.lang.String" not-null="true"/>
+    <property column="mes" name="mes" type="int" not-null="true"/>
+    <property column="anio" name="anio" type="int" not-null="true"/>
+    <property column="entrega" name="entrega" type="double" not-null="true"/>
+    <property column="observacionAlquiler" name="observacionAlquiler" type="java.lang.String" not-null="true"/>
+
+    <many-to-one name="alquiler" column="idAlquiler" class="pelagaggemodel.pojo.Alquiler"/>
+
+    
+   </class>
+
+</hibernate-mapping>
