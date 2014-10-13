@@ -1,6 +1,6 @@
 package pelagaggemodel.dao.model;
 
-import conservatorioutilities.dao.GenericDAO;
+import pelagaggemodel.dao.generic.GenericDAO;
 import pelagaggemodel.pojo.Departamento;
 import pelagaggemodel.pojo.Persona;
 /**
